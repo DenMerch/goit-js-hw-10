@@ -1,0 +1,13 @@
+{{each data}}
+<li><img src="{{url}}" alt="flag" width="40">
+    <p>{{name}}</p>
+</li>
+{{/each}}
+
+
+
+(data) => {
+data.map(`<li><img src="${data.url}" alt="flag" width="40">
+    <p>${data.name}</p>
+</li>`).join("");
+}
